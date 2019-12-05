@@ -1,0 +1,30 @@
+page-configuracoes {
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.item {
+  padding: 25px 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #efe9e9;
+}
+
+.item a {
+  display: flex;
+  align-items: center;
+}
+
+.item ion-icon {
+  font-size: 40px;
+  color: #5fc4f4;
+}
+
+.item span {
+  font-size: 25px;
+  color: #b3b0b0;
+  margin-left: 15px;
+}

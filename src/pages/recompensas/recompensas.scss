@@ -1,0 +1,24 @@
+page-recompensas {
+
+}
+
+
+.item-reforco {
+	display: flex!important;
+    flex-direction: row!important;
+    align-items: center!important;
+    width:300px!important;
+}
+.lista-reforco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.item-reforco img {
+	width: 100px!important;
+	border: 1px solid #d7d4d4;
+}
+.lista-reforco .list-ios .item-block .item-inner {
+    border-bottom: none;
+}

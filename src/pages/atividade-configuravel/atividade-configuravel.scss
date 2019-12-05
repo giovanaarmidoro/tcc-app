@@ -1,0 +1,32 @@
+page-atividade-configuravel {
+
+}
+
+.nome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  flex-flow: wrap;
+  padding: 0 20px;
+}
+
+.nome .letra {
+  width: 115px;
+  height: 120px;
+  font-size: 40px;
+  color: #827e7e;
+  background: #e1e8ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.nome .letra.ocultada {
+  opacity: 0.4;
+}
+
+a {
+  text-decoration: none;
+}

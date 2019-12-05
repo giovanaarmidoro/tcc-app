@@ -1,0 +1,60 @@
+page-atividade {
+  .nome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    flex-flow: wrap;
+    padding: 0 20px;
+  }
+
+  .letra {
+    width: 81px;
+    height: 85px;
+    font-size: 40px;
+    color: #827e7e;
+    background: #e1e8ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+  }
+
+  .nome .letra.ocultada {
+    opacity: 0.4;
+    background: transparent;
+    border: 2px solid #909598;
+    color: transparent;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .divisor {
+    border: 1px solid #5fc4f4;
+    width: 95%;
+    margin: 60px auto;
+  }
+
+  .letras-ocultadas {
+    position:relative;
+    min-height: 250px;
+  }
+
+  .letras-ocultadas .letra{
+    position: absolute;
+  }
+
+  .foto {
+    width: 210px;
+    background: #f1f1f1;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 50px;
+    font-size: 120px;
+    color: #b9b4b4;
+  }
+}

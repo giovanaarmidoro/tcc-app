@@ -1,0 +1,41 @@
+page-login {
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.usuario {
+  margin: 15px;
+}
+
+.usuario div {
+  width: 150px;
+  height: 170px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.usuario img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.usuario span {
+  font-size: 22px;
+  color: #9e9696;
+  margin-top: 10px;
+  display: block;
+}
+
+.usuarios {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  align-items: center;
+}

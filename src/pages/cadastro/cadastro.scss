@@ -1,0 +1,50 @@
+page-cadastro {
+  .tirar-foto {
+    width: 210px;
+    background: #f1f1f1;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 50px;
+    font-size: 43px;
+    color: #b9b4b4;
+
+    img {
+      object-fit: cover !important;
+      width: 210px;
+      height: 230px;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-form {
+  display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin-bottom: 10px;
+  }
+
+  .input-form label {
+    font-size: 25px;
+    color: #b5b1b1;
+    margin-bottom: 10px;
+  }
+
+  .input-form input {
+    background: #f1f1f1;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 23px;
+    padding: 15px 20px;
+    color: #635b5b;
+  }
+}
+
+
+

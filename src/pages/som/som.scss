@@ -1,0 +1,46 @@
+page-som {
+
+}
+
+.item {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+ion-range {
+	width: 100%;
+}
+
+.item p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  color: #949090;
+  margin: 0;
+  padding: 0 9px;
+  width:100%;
+}
+
+.item h3 {
+  color: #969292;
+  padding: 0 7px;
+}
+
+.divisor {
+  border: 1px solid #e4e4e4;
+  margin: 55px 0;
+}
+
+.titulo h1 {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo h1 ion-icon {
+    font-size: 35px;
+    margin-right: 15px;
+}

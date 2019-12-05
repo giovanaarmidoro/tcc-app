@@ -1,0 +1,45 @@
+<!--
+  Generated template for the CadastroPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content>
+  <div class="pagina">
+		<header>
+			<div>
+				<ion-icon name="home" (click)="abrirHome()"></ion-icon>
+			</div>
+			<div>
+				<!--<ion-icon name="refresh"></ion-icon>-->
+				<ion-icon name="person"></ion-icon>
+				<ion-icon name="settings" (click)="abrirConfiguracoes()"></ion-icon>
+				<ion-icon name="musical-notes"></ion-icon>
+			</div>
+		</header>
+		<section>
+			<div class="titulo"><h1>Novo usuário</h1></div>
+
+			<div class="tirar-foto" (click)="abrirCamera()">
+        <ion-icon *ngIf="!imagem" name="camera"></ion-icon>
+        <img class="imagem" *ngIf="imagem" [src]="imagem" />
+      </div>
+
+			<form>
+				<div class="input-form">
+					<label for="nome">Nome</label>
+					<input [(ngModel)]="nome" type="text" name="nome" id="nome">
+				</div>
+				<div class="input-form">
+					<label for="nome">Data de Nascimento</label>
+					<input [(ngModel)]="nascimento" type="text" name="nascimento" id="nascimento">
+				</div>
+      </form>
+
+			<div class="btn-continuar" (click)="abrirPreferencias()"><p>Próximo</p></div>
+		</section>
+		<footer>
+			<img src="/assets/logo.png" alt="Autismo" class="logo" />
+		</footer>
+	</div>
+</ion-content>

@@ -1,0 +1,120 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+.pagina {
+	display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
+ion-header::after {
+    display: none;
+}
+
+header, footer {
+	background: #2eb2ff;
+}
+
+header {
+	display: flex;
+    justify-content: space-between;
+    padding: 17px 20px;
+}
+
+header ion-icon {
+    color: #fff;
+    font-size: 35px;
+    padding: 0 20px;
+}
+
+footer {
+	text-align: center;
+	padding: 15px 20px 8px;
+}
+
+footer img {
+    width: 50px;
+}
+
+.btn-continuar p, .btn-continuar a {
+    color: #2eb2ff;
+    font-size: 25px;
+    padding: 20px 0;
+    text-decoration:none;
+}
+
+.btn-continuar {
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid #efe9e9;
+    margin-top: 30px;
+}
+
+.titulo {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #efe9e9;
+    margin-bottom: 50px;
+}
+
+.titulo h1 {
+    color: #8c99a0;
+    font-size: 30px;
+    padding: 20px 0;
+    margin-top: 11px;
+}
+.logo {
+    width: 6%!important;
+}
+.logo-inicio {
+    width: 230px;
+}
+
+/* in-flight clone */
+.gu-mirror {
+    position: fixed !important;
+    margin: 0 !important;
+    z-index: 9999 !important;
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    pointer-events: none;
+  }
+   
+  /* high-performance display:none; helper */
+  .gu-hide {
+    left: -9999px !important;
+  }
+   
+  /* added to mirrorContainer (default = body) while dragging */
+  .gu-unselectable {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+  }
+   
+  /* added to the source element while its mirror is dragged */
+  .gu-transit {
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+  }
+
+

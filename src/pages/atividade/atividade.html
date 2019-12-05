@@ -1,0 +1,49 @@
+<!--
+  Generated template for the AtividadePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content [class]="paleta">
+  <div class="pagina">
+    <header>
+			<div>
+				<ion-icon name="home" (click)="abrirHome()"></ion-icon>
+			</div>
+			<div>
+				<!--<ion-icon name="refresh"></ion-icon>-->
+				<ion-icon name="person"></ion-icon>
+				<ion-icon name="settings" (click)="abrirConfiguracoes()"></ion-icon>
+				<ion-icon name="musical-notes"></ion-icon>
+			</div>
+    </header>
+    
+    <section>
+      <div class="foto">
+        <ion-icon *ngIf="!alunoSelecionado" name="person"></ion-icon>
+        <img *ngIf="alunoSelecionado" [src]="alunoSelecionado.foto" />
+      </div>
+
+      <div *ngIf="nomeLacunas">
+        <div [dragula]="LETRAS" [(dragulaModel)]="nomeLacunas">
+          <div *ngFor="let letra of nomeLacunas" class="nome">
+            <div *ngIf="letra != '_'" class="letra">{{ letra.toUpperCase() }}</div>
+            <div *ngIf="letra === '_'" class="letra ocultada"></div>
+          </div>
+        </div>
+        
+        <hr class="divisor">
+
+        <div [dragula]="LETRAS" [(dragulaModel)]="letrasOcultas">
+          <div *ngFor="let letra of letrasOcultas" class="nome" >
+            <div class="letra">{{ letra.toUpperCase() }}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <img src="/assets/logo.png" alt="Autismo" class="logo" />
+    </footer>
+  </div>
+</ion-content>
